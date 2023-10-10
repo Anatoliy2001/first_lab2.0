@@ -1,13 +1,27 @@
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+
 #include "myfunc.h"
 
-int myfunc(int b) {
-    char *buffer = malloc(sizeof(char) * 1000);
-    buffer [0] = b + 4;
-    // здесь должен ругаться sonarcloud, т.к. утечка памяти
-    return buffer[0];
+double* myfunc(double a, double b, double c) {
+    double* roots = (double*)malloc(2 * sizeof(double));
+    double discriminant = b * b - 4 * a * c;
+    if (discriminant < 0) {
+	roots[0] = NAN;
+	roots[1] = NAN;
+        return roots;
+    } else if (discriminant == 0) {
+        roots[0] = -b / (2 * a);
+	roots[1] = NAN;
+        return roots;
+    } else {
+        double root1 = (-b + sqrt(discriminant)) / (2 * a);
+        double root2 = (-b - sqrt(discriminant)) / (2 * a);
+	roots[0] = root1;
+	roots[1] = root2;
+	return roots;
+    }
 }
 
 int val;
