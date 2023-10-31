@@ -4,22 +4,19 @@
 
 #include "myfunc.h"
 
-double* myfunc(double a, double b, double c, double* roots) {
+void myfunc(double a, double b, double c, double roots[]) {
     double discriminant = b * b - 4 * a * c;
     if (discriminant < 0) {
 	roots[0] = NAN;
 	roots[1] = NAN;
-        return roots;
     } else if (discriminant == 0) {
         roots[0] = -b / (2 * a);
 	roots[1] = NAN;
-        return roots;
     } else {
         double root1 = (-b + sqrt(discriminant)) / (2 * a);
         double root2 = (-b - sqrt(discriminant)) / (2 * a);
 	roots[0] = root1;
 	roots[1] = root2;
-	return roots;
     }
 }
 
