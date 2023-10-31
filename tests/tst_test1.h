@@ -16,29 +16,35 @@ extern "C" {
 
 TEST(mytestB, root2)
 {
-    double* result = myfunc(4, -1, -5);
-    ASSERT_EQ(result[0], 1.25);
-    ASSERT_EQ(result[1], -1.00);
+    double* roots = static_cast<double*>(malloc(2 * sizeof(double)));
+    roots = myfunc(4, -1, -5, roots);
+    ASSERT_EQ(roots[0], 1.25);
+    ASSERT_EQ(roots[1], -1.00);
+    free(roots);
 }
 
 TEST(mytestB, root1)
 {
-    double* result = myfunc(1, 12, 36);
-    ASSERT_EQ(result[0], -6.00);
-    ASSERT_TRUE(isnan(result[1]));
+    double* roots = static_cast<double*>(malloc(2 * sizeof(double)));
+    roots = myfunc(1, 12, 36, roots);
+    ASSERT_EQ(roots[0], -6.00);
+    ASSERT_TRUE(isnan(roots[1]));
+    free(roots);
 }
 
 TEST(mytestB, root0)
 {
-    double* result = myfunc(2, 1, 67);
-    ASSERT_TRUE(isnan(result[0]));
-    ASSERT_TRUE(isnan(result[1]));
+    double* roots = static_cast<double*>(malloc(2 * sizeof(double)));
+    roots = myfunc(2, 1, 67, roots);
+    ASSERT_TRUE(isnan(roots[0]));
+    ASSERT_TRUE(isnan(roots[1]));
 }
 
 TEST(mytestI, integrated)
 {
-    double* result = myfunc(1, -6, 9);
-    ASSERT_EQ(fibonachi((int)result[0]), 2);
+    double* roots = static_cast<double*>(malloc(2 * sizeof(double)));
+    roots = myfunc(1, -6, 9, roots);
+    ASSERT_EQ(fibonachi((int)roots[0]), 2);
 }
 
 #endif // MYTEST_H

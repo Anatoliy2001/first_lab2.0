@@ -46,7 +46,7 @@ TEST(TestStdOut, TestStdOut) {
     dup2(oldOutput, STDOUT_FILENO);
 
     // открываем оригинал и результат
-    char *filename = (char *)malloc(sizeof(char) * 1024);
+    char *filename = static_cast<char*>(malloc(sizeof(char) * 1024));
     sprintf(filename, "%s/TestSTDOut_output.txt", INPUTDIR);
     int testFd = open("TestStdOut_TestStdOut.out", O_RDONLY);
     int originFd = open(filename, O_RDONLY);
@@ -89,7 +89,7 @@ TEST(TestStdOut, usingCapture) {
     std::string output = testing::internal::GetCapturedStdout();
 
     // читаем ожидаемую строку из файла
-    char *filename = (char *)malloc(sizeof(char) * 1024);
+    char *filename = static_cast<char*>(malloc(sizeof(char) * 1024));
     sprintf(filename, "%s/TestSTDOut_output.txt", INPUTDIR);
 
     std::ifstream f(filename);

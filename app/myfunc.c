@@ -4,8 +4,7 @@
 
 #include "myfunc.h"
 
-double* myfunc(double a, double b, double c) {
-    double* roots = (double*)malloc(2 * sizeof(double));
+double* myfunc(double a, double b, double c, double* roots) {
     double discriminant = b * b - 4 * a * c;
     if (discriminant < 0) {
 	roots[0] = NAN;
