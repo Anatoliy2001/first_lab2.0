@@ -1,4 +1,4 @@
-[![CI/CD GitHub Actions](https://github.com/seekerk/ctest/actions/workflows/test-action.yml/badge.svg)](https://github.com/WhiteWhale88/testing1/blob/main/.github/workflows/test-action.yml)
+[![CI/CD GitHub Actions](https://github.com/WhiteWhale88/testing1/blob/main/.github/workflows/test-action.yml/badge.svg)](https://github.com/WhiteWhale88/testing1/blob/main/.github/workflows/test-action.yml)
 [![Coverage Status](https://coveralls.io/repos/github/WhiteWhale88/testing1/badge.svg?branch=main)](https://coveralls.io/github/WhiteWhale88/testing1?branch=main)
 
 # Пример работы связки cmake + Google Test (gtest)
