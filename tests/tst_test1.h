@@ -16,32 +16,28 @@ extern "C" {
 
 TEST(mytestB, root2)
 {
-    double roots[2];
-    myfunc(4, -1, -5, roots);
+    double* roots = myfunc(4, -1, -5);
     ASSERT_EQ(roots[0], 1.25);
     ASSERT_EQ(roots[1], -1.00);
 }
 
 TEST(mytestB, root1)
 {
-    double roots[2];
-    myfunc(1, 12, 36, roots);
+    double* roots = myfunc(1, 12, 36);
     ASSERT_EQ(roots[0], -6.00);
     ASSERT_TRUE(isnan(roots[1]));
 }
 
 TEST(mytestB, root0)
 {
-    double roots[2];
-    myfunc(2, 1, 67, roots);
+    double* roots = myfunc(2, 1, 67);
     ASSERT_TRUE(isnan(roots[0]));
     ASSERT_TRUE(isnan(roots[1]));
 }
 
 TEST(mytestI, integrated)
 {
-    double roots[2];
-    myfunc(1, -6, 9, roots);
+    double* roots = myfunc(1, -6, 9);
     ASSERT_EQ(fibonachi((int)roots[0]), 2);
 }
 
