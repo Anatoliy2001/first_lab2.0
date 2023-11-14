@@ -4,8 +4,8 @@ project(ctest)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_definitions ("-Wall -Wextra -Wpedantic -Weffc++ -Wconversion -Wunreachable-code -Wold-style-cast")
-#add_definitions ("-Wall -Wextra -Wpedantic -Wconversion -Wunreachable-code")
+#add_definitions ("-Wall -Wextra -Wpedantic -Weffc++ -Wconversion -Wunreachable-code -Wold-style-cast")
+add_definitions ("-Wall -Wextra -Wpedantic -Wconversion -Wunreachable-code")
 
 set(SOURCES
         main.c
