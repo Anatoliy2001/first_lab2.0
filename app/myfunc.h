@@ -1,7 +1,7 @@
 #ifndef MYFUNC_H
 #define MYFUNC_H
 
-double* myfunc(double a, double b, double c);
+void myfunc(double* roots, double a, double b, double c);
 
 int fibonachi(int num);
 

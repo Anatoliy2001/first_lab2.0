@@ -4,8 +4,7 @@
 
 #include "myfunc.h"
 
-double* myfunc(double a, double b, double c) {
-    double roots[2];
+void myfunc(double* roots, double a, double b, double c) {
     double discriminant = b * b - 4 * a * c;
     if (discriminant < 0) {
 	roots[0] = NAN;
@@ -19,7 +18,6 @@ double* myfunc(double a, double b, double c) {
 	roots[0] = root1;
 	roots[1] = root2;
     }
-    return roots;
 }
 
 int val;

@@ -19,8 +19,10 @@ int main(int argc, char *argv[])
 	return 1;
     }
 
-    double* roots = myfunc(a, b, c);
+    double* roots = (double*)malloc(2 * sizeof(double));
+    myfunc(roots, a, b, c);
     printf("Корни уравнения: %.2f, %.2f\n\n", roots[0], roots[1]);
+    free(roots);
 
     int fib_a = fibonachi((int)a);
     int fib_b = fibonachi((int)b);
