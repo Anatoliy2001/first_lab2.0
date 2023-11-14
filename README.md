@@ -3,10 +3,6 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=WhiteWhale88_testing1&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=WhiteWhale88_testing1)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=WhiteWhale88_testing1&metric=bugs)](https://sonarcloud.io/summary/new_code?id=WhiteWhale88_testing1)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=WhiteWhale88_testing1&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=WhiteWhale88_testing1)
-<<<<<<< HEAD
-=======
-
->>>>>>> 7d5391539ed4673316bec09b39a1c0fe9b1c8fef
 
 # Пример работы связки cmake + Google Test (gtest)
 
