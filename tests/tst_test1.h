@@ -13,7 +13,6 @@
 extern "C" {
 #include "myfunc.h"
 }
-
 TEST(mytestB, root2)
 {
     double* roots = (double*)malloc(2 * sizeof(double));
