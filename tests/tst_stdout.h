@@ -14,7 +14,6 @@ extern "C" {
 #include "myfunc.h"
 }
 
-
 #define MAXLINE 1024
 
 TEST(TestStdOut, TestStdOut) {
