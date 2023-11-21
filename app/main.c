@@ -9,7 +9,6 @@ int main(int argc, char *argv[])
 	printf("Используйте: %s x y z\n", argv[0]);
 	return 1;
     }
-
     double a = atof(argv[1]);
     double b = atof(argv[2]);
     double c = atof(argv[3]);
