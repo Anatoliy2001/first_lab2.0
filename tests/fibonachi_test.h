@@ -29,7 +29,7 @@ TEST(fibonachiTest, negative) {
 TEST(fibonachiTest, inputFile) {
     val = 2;
     char *filename = (char *)malloc(sizeof(char) * 1024);
-
+    sprintf(filename, "%s/input321.txt", INPUTDIR);
     int fd = open(filename, O_RDONLY);
     free(filename);
     if (fd < 0) {
