@@ -9,4 +9,5 @@ void printStdoutMessages();
 
 extern int val;
 
+
 #endif // MYFUNC_H
