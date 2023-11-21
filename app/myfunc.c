@@ -19,7 +19,6 @@ void myfunc(double* roots, double a, double b, double c) {
 	roots[1] = root2;
     }
 }
-
 int val;
 
 int fibonachi(int num) {
