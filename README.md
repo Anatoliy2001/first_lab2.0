@@ -1,8 +1,3 @@
-[![CI/CD GitHub Actions](https://github.com/WhiteWhale88/testing1/actions/workflows/test-action.yml/badge.svg)](https://github.com/WhiteWhale88/testing1/actions/workflows/test-action.yml)
-[![Coverage Status](https://coveralls.io/repos/github/WhiteWhale88/testing1/badge.svg?branch=main)](https://coveralls.io/github/WhiteWhale88/testing1?branch=main)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=WhiteWhale88_testing1&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=WhiteWhale88_testing1)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=WhiteWhale88_testing1&metric=bugs)](https://sonarcloud.io/summary/new_code?id=WhiteWhale88_testing1)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=WhiteWhale88_testing1&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=WhiteWhale88_testing1)
 
 # Пример работы связки cmake + Google Test (gtest)
 
