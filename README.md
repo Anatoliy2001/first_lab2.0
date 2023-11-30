@@ -1,4 +1,9 @@
 [![Coverage Status](https://coveralls.io/repos/github/Anatoliy2001/first_lab2.0/badge.svg?branch=main)](https://coveralls.io/github/Anatoliy2001/first_lab2.0?branch=main)
+[![CI/CD GitHub Actions](https://github.com/Anatoliy2001/first_lab2.0/actions/workflows/test-action.yml/badge.svg)](https://github.com/Anatoliy2001/first_lab2.0/actions/workflows/test-action.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Anatoliy2001_first_lab2.01&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Anatoliy2001_first_lab2.0)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Anatoliy2001_first_lab2.0&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Anatoliy2001_first_lab2.0)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?projectAnatoliy2001_first_lab2.0&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Anatoliy2001_first_lab2.0)
+
 # Пример работы связки cmake + Google Test (gtest)
 
 Для подгрузки gtest необходимо выполнить команды:
