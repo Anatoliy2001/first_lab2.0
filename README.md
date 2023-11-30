@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/Anatoliy2001/first_lab2.0/badge.svg?branch=main)](https://coveralls.io/github/Anatoliy2001/first_lab2.0?branch=main)
 # Пример работы связки cmake + Google Test (gtest)
 
 Для подгрузки gtest необходимо выполнить команды:
