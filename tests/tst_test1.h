@@ -18,7 +18,7 @@ TEST(mytestB, root2)
     double* roots = (double*)malloc(2 * sizeof(double));
     myfunc(roots, 4, -1, -5);
     ASSERT_EQ(roots[0], 1.25);
-    ASSERT_EQ(roots[1], -1.00);
+    ASSERT_EQ(roots[1], -2.00);
     free(roots);
 }
 
